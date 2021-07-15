@@ -9,3 +9,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: astra-digitizer
 Template: astra
 */
+
+/* Hide Title & Description */
+/* .entry-title {display: none !important;} */
+/* .site-title {display: none !important;} */
+/* .site-description {display: none !important;} */
