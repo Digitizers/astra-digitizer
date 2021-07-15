@@ -5,13 +5,13 @@ Astra offers plenty of sidebar options and widget areas giving you a full contro
 Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. 
 
 Some of the other features: 
-# WooCommerce Ready 
-# Responsive 
-# Compatible with major plugins 
-# Translation Ready 
-# Extendible with premium addons 
-# Regularly updated 
-# Designed, Developed, Maintained & Supported by Brainstorm Force. 
+** WooCommerce Ready **
+** Responsive **
+** Compatible with major plugins **
+** Translation Ready **
+** Extendible with premium addons **
+** Regularly updated **
+** Designed, Developed, Maintained & Supported by Brainstorm Force. **
 
 Looking for a perfect base theme? Look no further. 
 Astra is fast, fully customizable and beautiful theme!
