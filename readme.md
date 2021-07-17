@@ -1,6 +1,6 @@
 # Astra Digitizer
 
-Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. 
+(Astra)[https://www.digitizer.link/astra] is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. 
 It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. 
 Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. 
 Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. 
