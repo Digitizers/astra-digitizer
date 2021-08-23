@@ -42,6 +42,15 @@ function wpb_stop_update_emails( $send, $type, $core_update, $result ) {
 	return true;
 }
 
+// // HTTP Security Headers
+// header('X-Frame-Options: SAMEORIGIN');
+// header('X-XSS-Protection: 1; mode=block');
+// header('X-Content-Type-Options: nosniff');
+// header('Strict-Transport-Security:max-age=31536000; includeSubdomains; preload');
+// @ini_set('session.cookie_httponly', true);
+// @ini_set('session.cookie_secure', true);
+// @ini_set('session.use_only_cookies', true);
+
 // // Reorder Multiple Columns in Elementor 
 // function ben_add_responsive_column_order( $element, $args ) {
 // 	$element->add_responsive_control(
@@ -84,23 +93,18 @@ function wpb_stop_update_emails( $send, $type, $core_update, $result ) {
 //   if ( $wp_version !== '4.7.1' ) {
 //      return $data;
 //   }
-
 //   $filetype = wp_check_filetype( $filename, $mimes );
-
 //   return [
 //       'ext'             => $filetype['ext'],
 //       'type'            => $filetype['type'],
 //       'proper_filename' => $data['proper_filename']
 //   ];
-
 // }, 10, 4 );
-
 // function cc_mime_types( $mimes ){
 //   $mimes['svg'] = 'image/svg+xml';
 //   return $mimes;
 // }
 // add_filter( 'upload_mimes', 'cc_mime_types' );
-
 // function fix_svg() {
 //   echo '<style type="text/css">
 //         .attachment-266x266, .thumbnail img {
@@ -121,6 +125,19 @@ function wpb_stop_update_emails( $send, $type, $core_update, $result ) {
 	 
 // //******--- Remove Google Fonts ---******
 // add_filter( 'elementor/frontend/print_google_fonts', '__return_false' );
+// add_filter( 'astra_enable_default_fonts', '__return_false' );
+// function remove_astra_fonts() {
+//     wp_dequeue_style( 'astra-google-fonts' );
+// }
+// add_action( 'wp_enqueue_scripts', 'remove_astra_fonts', 999 );
+
+/* //******--- Preconnect Google Fonts ---******
+// function digitizer_preconnect() { ?>
+//     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+// <?php
+// }
+// add_action('wp_head', 'digitizer_preconnect', 0);
+*/
 
 // //******--- Remove Font Awesome ---*****
 // add_action( 'elementor/frontend/after_register_styles',function() {
@@ -165,3 +182,11 @@ function wpb_stop_update_emails( $send, $type, $core_update, $result ) {
 // 	return $existing_mimes;
 // }
 // add_filter( 'mime_types', 'webp_upload_mimes' );
+
+// // Hide comments "URL" field
+// add_filter('comment_form_default_fields', 'unset_url_field');
+// function unset_url_field($fields){
+//     if(isset($fields['url']))
+//        unset($fields['url']);
+//        return $fields;
+// }
